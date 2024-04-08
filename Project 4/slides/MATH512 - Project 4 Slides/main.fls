@@ -601,6 +601,14 @@ INPUT ./imgs/2f.png
 INPUT ./imgs/2f.png
 INPUT ./imgs/2f.png
 INPUT ./imgs/2f.png
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/huerta/alegreya/Alegreya-Bold-osf-t1.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/vf/huerta/alegreya/Alegreya-Bold-osf-t1.vf
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/huerta/alegreya/Alegreya-Bold-osf-t1--base.tfm
+INPUT ./imgs/5.png
+INPUT ./imgs/5.png
+INPUT ./imgs/5.png
+INPUT ./imgs/5.png
+INPUT ./imgs/5.png
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/vf/huerta/alegreya/Alegreya-Regular-osf-t1.vf
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/huerta/alegreya/Alegreya-Regular-osf-t1--base.tfm
 OUTPUT main.nav

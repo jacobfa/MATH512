@@ -23,8 +23,7 @@ dt = 0.01
 n = Int(t / dt)
 number_of_samples = 10000
 
-function euler_maruyama(a, dt, dw)
-    x = a
+function euler_maruyama(x, dt, dw)
     return x + μ * x * dt + σ * x * dw
 end
 

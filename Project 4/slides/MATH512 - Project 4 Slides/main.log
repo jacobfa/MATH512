@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.3)  5 APR 2024 05:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.3)  8 APR 2024 08:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -820,7 +820,11 @@ LaTeX Font Info:    Font shape `T1/Alegreya-OsF/m/n' in size <12> not available
 (Font)              Font shape `T1/Alegreya-OsF/regular/n' tried instead on input line 20.
 LaTeX Font Info:    Font shape `T1/Alegreya-OsF/regular/n' will be
 (Font)              scaled to size 12.0pt on input line 20.
- (./main.aux)
+ (./main.aux
+
+LaTeX Warning: Label `fig:2e' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
@@ -1024,30 +1028,30 @@ LaTeX Font Info:    Font shape `T1/Alegreya-OsF/regular/n' will be
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/alegreya/algr_p7kywn.enc}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/alegreya/algr_u7nq5p.enc}]
 LaTeX Font Info:    Font shape `T1/AlegreyaSans-OsF/m/n' in size <12> not available
-(Font)              Font shape `T1/AlegreyaSans-OsF/regular/n' tried instead on input line 63.
+(Font)              Font shape `T1/AlegreyaSans-OsF/regular/n' tried instead on input line 40.
 LaTeX Font Info:    Font shape `T1/AlegreyaSans-OsF/regular/n' will be
-(Font)              scaled to size 12.0pt on input line 63.
+(Font)              scaled to size 12.0pt on input line 40.
 LaTeX Font Info:    Font shape `T1/AlegreyaSans-OsF/m/n' in size <8> not available
-(Font)              Font shape `T1/AlegreyaSans-OsF/regular/n' tried instead on input line 63.
+(Font)              Font shape `T1/AlegreyaSans-OsF/regular/n' tried instead on input line 40.
 LaTeX Font Info:    Font shape `T1/AlegreyaSans-OsF/regular/n' will be
-(Font)              scaled to size 8.0pt on input line 63.
+(Font)              scaled to size 8.0pt on input line 40.
 LaTeX Font Info:    Font shape `T1/AlegreyaSans-OsF/m/n' in size <6> not available
-(Font)              Font shape `T1/AlegreyaSans-OsF/regular/n' tried instead on input line 63.
+(Font)              Font shape `T1/AlegreyaSans-OsF/regular/n' tried instead on input line 40.
 LaTeX Font Info:    Font shape `T1/AlegreyaSans-OsF/regular/n' will be
-(Font)              scaled to size 6.0pt on input line 63.
-LaTeX Font Info:    Trying to load font information for U+zeur on input line 63.
+(Font)              scaled to size 6.0pt on input line 40.
+LaTeX Font Info:    Trying to load font information for U+zeur on input line 40.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/eulervm/uzeur.fd
 File: uzeur.fd 2005/01/11 v4.0 (WaS)
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-eur.cfg
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+zeus on input line 63.
+LaTeX Font Info:    Trying to load font information for U+zeus on input line 40.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/eulervm/uzeus.fd
 File: uzeus.fd 2005/01/11 v4.0 (WaS)
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-eus.cfg
 File: mt-eus.cfg 2006/07/28 v1.2 microtype config. file: AMS Euler Script (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+zeuex on input line 63.
+LaTeX Font Info:    Trying to load font information for U+zeuex on input line 40.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/eulervm/uzeuex.fd
 File: uzeuex.fd 2005/01/11 v4.0 (WaS)
 ) (/usr/local/texlive/2024/texmf-dist/tex/latex/microtype/mt-msa.cfg
@@ -1056,100 +1060,124 @@ File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `T1/Alegreya-OsF/m/n' in size <8> not available
-(Font)              Font shape `T1/Alegreya-OsF/regular/n' tried instead on input line 63.
+(Font)              Font shape `T1/Alegreya-OsF/regular/n' tried instead on input line 40.
 LaTeX Font Info:    Font shape `T1/Alegreya-OsF/regular/n' will be
-(Font)              scaled to size 8.0pt on input line 63.
+(Font)              scaled to size 8.0pt on input line 40.
 LaTeX Font Info:    Font shape `T1/Alegreya-OsF/m/it' in size <8> not available
-(Font)              Font shape `T1/Alegreya-OsF/regular/it' tried instead on input line 63.
+(Font)              Font shape `T1/Alegreya-OsF/regular/it' tried instead on input line 40.
 LaTeX Font Info:    Font shape `T1/Alegreya-OsF/regular/it' will be
-(Font)              scaled to size 8.0pt on input line 63.
+(Font)              scaled to size 8.0pt on input line 40.
 LaTeX Font Info:    Font shape `T1/Alegreya-OsF/m/it' in size <6> not available
-(Font)              Font shape `T1/Alegreya-OsF/regular/it' tried instead on input line 63.
+(Font)              Font shape `T1/Alegreya-OsF/regular/it' tried instead on input line 40.
 LaTeX Font Info:    Font shape `T1/Alegreya-OsF/regular/it' will be
-(Font)              scaled to size 6.0pt on input line 63.
+(Font)              scaled to size 6.0pt on input line 40.
 LaTeX Font Info:    Font shape `T1/AlegreyaSans-OsF/m/n' in size <10.95> not available
-(Font)              Font shape `T1/AlegreyaSans-OsF/regular/n' tried instead on input line 63.
+(Font)              Font shape `T1/AlegreyaSans-OsF/regular/n' tried instead on input line 40.
 LaTeX Font Info:    Font shape `T1/AlegreyaSans-OsF/regular/n' will be
-(Font)              scaled to size 10.95pt on input line 63.
+(Font)              scaled to size 10.95pt on input line 40.
 LaTeX Font Info:    Font shape `T1/Alegreya-OsF/m/it' in size <10.95> not available
-(Font)              Font shape `T1/Alegreya-OsF/regular/it' tried instead on input line 63.
+(Font)              Font shape `T1/Alegreya-OsF/regular/it' tried instead on input line 40.
 LaTeX Font Info:    Font shape `T1/Alegreya-OsF/regular/it' will be
-(Font)              scaled to size 10.95pt on input line 63.
+(Font)              scaled to size 10.95pt on input line 40.
 LaTeX Font Info:    Font shape `T1/Alegreya-OsF/m/n' in size <17.28> not available
-(Font)              Font shape `T1/Alegreya-OsF/regular/n' tried instead on input line 63.
+(Font)              Font shape `T1/Alegreya-OsF/regular/n' tried instead on input line 40.
 LaTeX Font Info:    Font shape `T1/Alegreya-OsF/regular/n' will be
-(Font)              scaled to size 17.28pt on input line 63.
+(Font)              scaled to size 17.28pt on input line 40.
 LaTeX Font Info:    Font shape `T1/Alegreya-OsF/sb/n' in size <17.28> not available
-(Font)              Font shape `T1/Alegreya-OsF/medium/n' tried instead on input line 63.
+(Font)              Font shape `T1/Alegreya-OsF/medium/n' tried instead on input line 40.
 LaTeX Font Info:    Font shape `T1/Alegreya-OsF/medium/n' will be
-(Font)              scaled to size 17.28pt on input line 63.
+(Font)              scaled to size 17.28pt on input line 40.
 LaTeX Font Info:    Font shape `T1/Alegreya-OsF/sb/n' in size <14.4> not available
-(Font)              Font shape `T1/Alegreya-OsF/medium/n' tried instead on input line 63.
+(Font)              Font shape `T1/Alegreya-OsF/medium/n' tried instead on input line 40.
 LaTeX Font Info:    Font shape `T1/Alegreya-OsF/medium/n' will be
-(Font)              scaled to size 14.4pt on input line 63.
+(Font)              scaled to size 14.4pt on input line 40.
 LaTeX Font Info:    Font shape `T1/Alegreya-OsF/m/n' in size <4> not available
-(Font)              Font shape `T1/Alegreya-OsF/regular/n' tried instead on input line 63.
+(Font)              Font shape `T1/Alegreya-OsF/regular/n' tried instead on input line 40.
 LaTeX Font Info:    Font shape `T1/Alegreya-OsF/regular/n' will be
-(Font)              scaled to size 4.0pt on input line 63.
+(Font)              scaled to size 4.0pt on input line 40.
  [2
 
 ]
-<imgs/convergence1.png, id=53, 602.25pt x 401.5pt>
+<imgs/convergence1.png, id=61, 602.25pt x 401.5pt>
 File: imgs/convergence1.png Graphic file (type png)
 <use imgs/convergence1.png>
-Package pdftex.def Info: imgs/convergence1.png  used on input line 76.
+Package pdftex.def Info: imgs/convergence1.png  used on input line 53.
 (pdftex.def)             Requested size: 192.72392pt x 128.48262pt.
  [3
 
  <./imgs/convergence1.png>]
-<imgs/2a.png, id=60, 602.25pt x 401.5pt>
+<imgs/2a.png, id=68, 602.25pt x 401.5pt>
 File: imgs/2a.png Graphic file (type png)
 <use imgs/2a.png>
-Package pdftex.def Info: imgs/2a.png  used on input line 140.
+Package pdftex.def Info: imgs/2a.png  used on input line 64.
 (pdftex.def)             Requested size: 301.12425pt x 200.7495pt.
  [4
 
  <./imgs/2a.png>]
-<imgs/2b.png, id=67, 602.25pt x 401.5pt>
+<imgs/2b.png, id=75, 602.25pt x 401.5pt>
 File: imgs/2b.png Graphic file (type png)
 <use imgs/2b.png>
-Package pdftex.def Info: imgs/2b.png  used on input line 150.
+Package pdftex.def Info: imgs/2b.png  used on input line 74.
 (pdftex.def)             Requested size: 301.12425pt x 200.7495pt.
  [5
 
  <./imgs/2b.png>]
-<imgs/2c.png, id=74, 602.25pt x 401.5pt>
+<imgs/2c.png, id=82, 602.25pt x 401.5pt>
 File: imgs/2c.png Graphic file (type png)
 <use imgs/2c.png>
-Package pdftex.def Info: imgs/2c.png  used on input line 160.
+Package pdftex.def Info: imgs/2c.png  used on input line 84.
 (pdftex.def)             Requested size: 301.12425pt x 200.7495pt.
  [6
 
  <./imgs/2c.png>]
-<imgs/2d.png, id=81, 602.25pt x 401.5pt>
+<imgs/2d.png, id=89, 602.25pt x 401.5pt>
 File: imgs/2d.png Graphic file (type png)
 <use imgs/2d.png>
-Package pdftex.def Info: imgs/2d.png  used on input line 170.
+Package pdftex.def Info: imgs/2d.png  used on input line 94.
 (pdftex.def)             Requested size: 301.12425pt x 200.7495pt.
  [7
 
  <./imgs/2d.png>]
-<imgs/2e.png, id=89, 602.25pt x 401.5pt>
+<imgs/2e.png, id=97, 602.25pt x 401.5pt>
 File: imgs/2e.png Graphic file (type png)
 <use imgs/2e.png>
-Package pdftex.def Info: imgs/2e.png  used on input line 181.
+Package pdftex.def Info: imgs/2e.png  used on input line 105.
 (pdftex.def)             Requested size: 301.12425pt x 200.7495pt.
  [8
 
  <./imgs/2e.png>]
-<imgs/2f.png, id=96, 602.25pt x 401.5pt>
+<imgs/2f.png, id=104, 602.25pt x 401.5pt>
 File: imgs/2f.png Graphic file (type png)
 <use imgs/2f.png>
-Package pdftex.def Info: imgs/2f.png  used on input line 191.
+Package pdftex.def Info: imgs/2f.png  used on input line 115.
 (pdftex.def)             Requested size: 301.12425pt x 200.7495pt.
  [9
 
  <./imgs/2f.png>] [10
+
+] [11
+
+]
+LaTeX Font Info:    Font shape `T1/Alegreya-OsF/b/n' in size <12> not available
+(Font)              Font shape `T1/Alegreya-OsF/bold/n' tried instead on input line 143.
+LaTeX Font Info:    Font shape `T1/Alegreya-OsF/bold/n' will be
+(Font)              scaled to size 12.0pt on input line 143.
+ [12
+
+]
+<imgs/5.png, id=126, 602.25pt x 401.5pt>
+File: imgs/5.png Graphic file (type png)
+<use imgs/5.png>
+Package pdftex.def Info: imgs/5.png  used on input line 153.
+(pdftex.def)             Requested size: 301.12425pt x 200.7495pt.
+
+pdfTeX warning (ext4): destination with the same identifier (name{fig:2e}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.153 \end{frame}
+                  [13
+
+ <./imgs/5.png>] [14
 
 ]
 \tf@nav=\write6
@@ -1166,22 +1194,26 @@ Package pdftex.def Info: imgs/2f.png  used on input line 191.
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D5B18DE86FB736B5AC70655E5EAFA36F;344.
+(rerunfilecheck)             Checksum: B277C96F43F9C60A8FA1521A6CDBF193;536.
  ) 
 Here is how much of TeX's memory you used:
- 37037 strings out of 474116
- 765612 string characters out of 5743683
- 1934187 words of memory out of 5000000
- 58527 multiletter control sequences out of 15000+600000
- 889102 words of font info for 183 fonts, out of 8000000 for 9000
+ 37114 strings out of 474116
+ 766919 string characters out of 5743683
+ 1935187 words of memory out of 5000000
+ 58585 multiletter control sequences out of 15000+600000
+ 905252 words of font info for 189 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,11n,123p,1083b,661s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/huerta/alegreya/Alegreya-Bold.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/huerta/alegreya/Alegreya-Italic.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/huerta/alegreya/Alegreya-Medium.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/huerta/alegreya/Alegreya-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/huerta/alegreya/AlegreyaSans-Black.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/huerta/alegreya/AlegreyaSans-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/euler/euex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb>
-Output written on main.pdf (10 pages, 381065 bytes).
+Output written on main.pdf (14 pages, 490762 bytes).
 PDF statistics:
- 171 PDF objects out of 1000 (max. 8388607)
- 120 compressed objects within 2 object streams
- 32 named destinations out of 1000 (max. 500000)
- 67694 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 204 PDF objects out of 1000 (max. 8388607)
+ 148 compressed objects within 2 object streams
+ 42 named destinations out of 1000 (max. 500000)
+ 71811 words of extra memory for PDF output out of 74296 (max. 10000000)
 

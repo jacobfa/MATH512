@@ -67,3 +67,19 @@ println("C = ", C)
 # 𝐸|𝑋1− 𝑋(1)| = 𝐶Δ𝑡0.5
 C = abs(mean(x .- x_exact))/Δt^0.5
 println("C = ", C)
+
+# plot the strong, weak and exact solutions
+strong_error = [abs(x[i] - x_exact[i]) for i in 1:length(x)]
+weak_error = [abs(mean(x[1:i]) - x_exact[i]) for i in 1:length(x)]
+strong_solution = [x_exact[i] for i in 1:length(x)]
+weak_solution = [mean(x[1:i]) for i in 1:length(x)]
+
+plot(t, strong_error, label="Strong Error", xlabel=L"t", ylabel="Error", title="Strong Error vs Weak Error")
+plot!(t, weak_error, label="Weak Error")
+savefig("./imgs/3b_error.png")
+
+# Plot the strong, weak and exact solutions
+plot(t, x, label="Euler Maruyama", xlabel=L"t", ylabel=L"X(t)", title="Strong Solution vs Weak Solution vs Exact Solution")
+plot!(t, strong_solution, label="Strong Solution")
+plot!(t, weak_solution, label="Weak Solution")
+savefig("./imgs/3b_comparison.png")

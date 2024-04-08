@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1712320921.79365 "/Users/jacobfa/Desktop/Work/MATH512/Project 4/slides/MATH512 - Project 4 Slides/main.tex" "main.pdf" "main" 1712320923.07494 0
-  "/Users/jacobfa/Desktop/Work/MATH512/Project 4/slides/MATH512 - Project 4 Slides/main.tex" 1712320921.23266 5899 ea26d4e1c5fd3290e186fb8701e254ca ""
+["pdflatex"] 1712591778.25395 "/Users/jacobfa/Desktop/Work/MATH512/Project 4/slides/MATH512 - Project 4 Slides/main.tex" "main.pdf" "main" 1712591779.53024 0
+  "/Users/jacobfa/Desktop/Work/MATH512/Project 4/slides/MATH512 - Project 4 Slides/main.tex" 1712591776.64636 4095 d8b49dd11c19de250e49d41298d6af87 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/alegreya/algr_p7kywn.enc" 1570657983 3031 91590f774bcd9d325bf6f870c0d38976 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/alegreya/algr_u7nq5p.enc" 1570657983 3020 0625cd3be7e30fef8690a9f911c26a06 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -301,11 +301,12 @@
   "imgs/2d.png" 1712320170.99221 19426 70bcca3546da33ef361a87e877fdeec7 ""
   "imgs/2e.png" 1712320170.99263 18606 0c7c019ed526a0b97657bb5e0f2bdc75 ""
   "imgs/2f.png" 1712320170.99313 48506 095b9d728f2182e7bf25201d3af2e9ef ""
+  "imgs/5.png" 1712320170.99848 17723 06f28a4ae2001b8de9136a8c9c20a337 ""
   "imgs/convergence1.png" 1712320170.99877 22098 84eb4e9f8756d28aa7f20508df5f1c21 ""
-  "main.aux" 1712320922.92553 3542 5879674b779a3ab7a510d33862bfab0d "pdflatex"
-  "main.nav" 1712320922.92646 1823 9d9aa0a8cef12a27757cd30ba7bcf13b "pdflatex"
-  "main.out" 1712320922.92629 344 d5b18de86fb736b5ac70655e5eafa36f "pdflatex"
-  "main.tex" 1712320921.23266 5899 ea26d4e1c5fd3290e186fb8701e254ca ""
+  "main.aux" 1712591779.38322 4700 b0f0c909dff0281323b0a35e6ba021c7 "pdflatex"
+  "main.nav" 1712591779.38427 2510 7e15cd545786a61063f3c65ef39f2397 "pdflatex"
+  "main.out" 1712591779.38411 536 b277c96f43f9c60a8fa1521a6cdbf193 "pdflatex"
+  "main.tex" 1712591776.64636 4095 d8b49dd11c19de250e49d41298d6af87 ""
   (generated)
   "main.aux"
   "main.log"
