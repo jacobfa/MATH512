@@ -48,6 +48,6 @@ for i in 1:length(L)
     sum_dW2[i] = sum(dW.^2)
 end
 
-plot(L, sum_dW, label=L"\sum_{i=0}^{L-1} |\delta W_i|", xlabel="L", ylabel="Sum", title="Sums of Increment")
+plot(L, sum_dW, label=L"\sum_{i=0}^{L-1} |\delta W_i|", xlabel="L", ylabel="Value", title=L"Sums of $|\delta W_i|$ and $\delta W_i^2$")
 plot!(L, sum_dW2, label=L"\sum_{i=0}^{L-1} \delta W_i^2")
 savefig("./imgs/convergence1.png")
