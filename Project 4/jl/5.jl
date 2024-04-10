@@ -31,16 +31,6 @@ function exact_solution(x0, μ, σ, t, dw)
     return x0 * exp((μ - 0.5 * σ^2) * t + σ * dw)
 end
 
-# Choose a step size Δt
-# Choose a number of paths, M
-# for s = 1to M
-    #  Set tn = 0 and Xn = X0 While Xn > aand Xn < b  Compute a N(0,1) sample ξn 
-    #  Replace Xn by Xn+∆tf(Xn)+√∆tξng(Xn) 
-    #  Replace tn by tn+∆t 
-    # end 
-    # set Ts exit=tn−1/2 ∆t 
-# end set aM= 1M M s=1Ts exit 
-# setb2 M= 1 M−1 M s=1(Ts exit−aM)2
 
 function mean_exit_time(x0, μ, σ, a, b, t, dt, number_of_samples)
     aM = 0

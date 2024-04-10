@@ -1,5 +1,0 @@
-\beamer@sectionintoc {1}{Question 1}{2}{0}{1}
-\beamer@sectionintoc {2}{Question 2}{4}{0}{2}
-\beamer@sectionintoc {3}{Question 3}{10}{0}{3}
-\beamer@sectionintoc {4}{Question 4}{13}{0}{4}
-\beamer@sectionintoc {5}{Question 5}{17}{0}{5}
