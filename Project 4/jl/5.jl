@@ -31,25 +31,59 @@ function exact_solution(x0, μ, σ, t, dw)
     return x0 * exp((μ - 0.5 * σ^2) * t + σ * dw)
 end
 
-function compute_exit_time(x0, μ, σ, t, dt, n, number_of_samples, a, b)
-    exit_times = zeros(number_of_samples)
-    for i in 1:number_of_samples
-        dw = sqrt(dt) * randn()
-        x = x0
-        for j in 1:n
-            x = euler_maruyama(x, dt, dw)
-            dw = sqrt(dt) * randn()
-            if x < a || x > b
-                exit_times[i] = j * dt
-                break
-            end
+# Choose a step size Δt
+# Choose a number of paths, M
+# for s = 1to M
+    #  Set tn = 0 and Xn = X0 While Xn > aand Xn < b  Compute a N(0,1) sample ξn 
+    #  Replace Xn by Xn+∆tf(Xn)+√∆tξng(Xn) 
+    #  Replace tn by tn+∆t 
+    # end 
+    # set Ts exit=tn−1/2 ∆t 
+# end set aM= 1M M s=1Ts exit 
+# setb2 M= 1 M−1 M s=1(Ts exit−aM)2
+
+function mean_exit_time(x0, μ, σ, a, b, t, dt, number_of_samples)
+    aM = 0
+    b2M = 0
+    vals = []
+    for s = 1:number_of_samples
+        Xn = x0
+        tn = 0
+        while Xn > a && Xn < b
+            ξn = randn()
+            Xn = euler_maruyama(Xn, dt, ξn)
+            tn += dt
         end
+        Ts_exit = tn - 0.5 * dt
+        push!(vals, Ts_exit)
+        aM += Ts_exit
     end
-    return mean(exit_times)
+    aM /= number_of_samples
+    for s = 1:number_of_samples
+        b2M += (vals[s] - aM)^2
+    end
+    b2M /= number_of_samples - 1
+    return vals, aM, b2M
 end
 
-exit_times = [compute_exit_time(x0, μ, σ, t, dt, n, number_of_samples, a, b) for i in 1:1000]
+vals, aM, b2M = mean_exit_time(x0, μ, σ, a, b, t, dt, number_of_samples)
+println("Mean exit time: ", aM)
+println("Variance of exit time: ", b2M)
 
-histogram(exit_times, bins=50, label=L"\tau", xlabel="Value", ylabel="Frequency", title=L"Histogram of $\tau$")
-savefig("./imgs/5.png")
-println("Mean exit time: ", mean(exit_times))
+# Plot the mean exit time function 𝑣(𝑥) for 𝑥 ∈ [0.5, 3]
+x = 0.5:0.01:3
+v = []
+for i in x
+    local vals = []
+    local aM = 0
+    local b2M = 0
+    vals, aM, b2M = mean_exit_time(i, μ, σ, a, b, t, dt, number_of_samples)
+    push!(v, aM)
+end
+
+plot(x, v, label = "Mean exit time", xlabel = L"x", ylabel = L"v(x)", title = "Mean exit time function", legend = :topleft, dpi = 1000)
+savefig("imgs/5mean_exit_time.png")
+
+# plot the histogram of the exit times
+histogram(vals, label = "Exit times", xlabel = L"t", ylabel = "Frequency", title = "Histogram of exit times", legend = :topleft, dpi = 1000)
+savefig("imgs/5exit_times_histogram.png")

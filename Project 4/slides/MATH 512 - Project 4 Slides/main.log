@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.3)  8 APR 2024 08:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.4.3)  10 APR 2024 03:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/jacobfa/Desktop/Work/MATH512/Project 4/slides/MATH512 - Project 4 Slides/main.tex"
-(/Users/jacobfa/Desktop/Work/MATH512/Project 4/slides/MATH512 - Project 4 Slides/main.tex
+**"/Users/jacobfa/Desktop/Work/MATH512/Project 4/slides/MATH 512 - Project 4 Slides/main.tex"
+(/Users/jacobfa/Desktop/Work/MATH512/Project 4/slides/MATH 512 - Project 4 Slides/main.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamer.cls
@@ -822,7 +822,7 @@ LaTeX Font Info:    Font shape `T1/Alegreya-OsF/regular/n' will be
 (Font)              scaled to size 12.0pt on input line 20.
  (./main.aux
 
-LaTeX Warning: Label `fig:2e' multiply defined.
+LaTeX Warning: Label `fig:enter-label' multiply defined.
 
 )
 \openout1 = `main.aux'.
@@ -1153,31 +1153,98 @@ Package pdftex.def Info: imgs/2f.png  used on input line 115.
 (pdftex.def)             Requested size: 301.12425pt x 200.7495pt.
  [9
 
- <./imgs/2f.png>] [10
+ <./imgs/2f.png>]
+LaTeX Font Info:    Font shape `T1/Alegreya-OsF/b/n' in size <12> not available
+(Font)              Font shape `T1/Alegreya-OsF/bold/n' tried instead on input line 129.
+LaTeX Font Info:    Font shape `T1/Alegreya-OsF/bold/n' will be
+(Font)              scaled to size 12.0pt on input line 129.
 
-] [11
+Overfull \hbox (6.09207pt too wide) detected at line 129
+\T1/Alegreya-OsF/regular/it/12 dX\U/zeus/m/n/12 ¨\T1/Alegreya-OsF/regular/it/12 t\U/zeus/m/n/12 © ½ \U/zeur/m/n/12 ^^V\T1/Alegreya-OsF/regular/it/12 X\U/zeus/m/n/12 ¨\T1/Alegreya-OsF/regular/it/12 t\U/zeus/m/n/12 ©\T1/Alegreya-OsF/regular/it/12 dt \U/zeus/m/n/12 « \U/zeur/m/n/12 ^^[\T1/Alegreya-OsF/regular/it/12 X\U/zeus/m/n/12 ¨\T1/Alegreya-OsF/regular/it/12 t\U/zeus/m/n/12 ©\T1/Alegreya-OsF/regular/it/12 dW\U/zeus/m/n/12 ¨\T1/Alegreya-OsF/regular/it/12 t\U/zeus/m/n/12 ©\T1/AlegreyaSans-OsF/regular/n/12 ,  \T1/Alegreya-OsF/regular/it/12 X\U/zeus/m/n/12 ¨\T1/Alegreya-OsF/regular/n/12 0\U/zeus/m/n/12 © ½ \T1/Alegreya-OsF/regular/n/12 3\T1/AlegreyaSans-OsF/regular/n/12 ,  \U/zeur/m/n/12 ^^V \U/zeus/m/n/12 ½ \T1/Alegreya-OsF/regular/n/12 2\T1/AlegreyaSans-OsF/regular/n/12 ,  \U/zeur/m/n/12 ^^[ \U/zeus/m/n/12 ½ \T1/Alegreya-OsF/regular/n/12 0\T1/AlegreyaSans-OsF/regular/n/12 .\T1/Alegreya-OsF/regular/n/12 10
+ []
+
+[10
 
 ]
-LaTeX Font Info:    Font shape `T1/Alegreya-OsF/b/n' in size <12> not available
-(Font)              Font shape `T1/Alegreya-OsF/bold/n' tried instead on input line 143.
-LaTeX Font Info:    Font shape `T1/Alegreya-OsF/bold/n' will be
-(Font)              scaled to size 12.0pt on input line 143.
+<project4Q3fig1.png, id=116, 843.15pt x 632.3625pt>
+File: project4Q3fig1.png Graphic file (type png)
+<use project4Q3fig1.png>
+Package pdftex.def Info: project4Q3fig1.png  used on input line 143.
+(pdftex.def)             Requested size: 210.78697pt x 158.09024pt.
+ [11
+
+ <./project4Q3fig1.png (PNG copy)>]
+<project4Q3fig3.png, id=123, 843.15pt x 632.3625pt>
+File: project4Q3fig3.png Graphic file (type png)
+<use project4Q3fig3.png>
+Package pdftex.def Info: project4Q3fig3.png  used on input line 173.
+(pdftex.def)             Requested size: 122.91406pt x 92.17749pt.
+File: project4Q3fig3.png Graphic file (type png)
+<use project4Q3fig3.png>
+Package pdftex.def Info: project4Q3fig3.png  used on input line 173.
+(pdftex.def)             Requested size: 122.91406pt x 92.17749pt.
  [12
 
+
+pdfTeX warning (ext4): destination with the same identifier (name{fig:enter-label}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.173 \end{frame}
+                  <./project4Q3fig3.png (PNG copy)>]
+Overfull \hbox (6.09207pt too wide) detected at line 196
+\T1/Alegreya-OsF/regular/it/12 dX\U/zeus/m/n/12 ¨\T1/Alegreya-OsF/regular/it/12 t\U/zeus/m/n/12 © ½ \U/zeur/m/n/12 ^^V\T1/Alegreya-OsF/regular/it/12 X\U/zeus/m/n/12 ¨\T1/Alegreya-OsF/regular/it/12 t\U/zeus/m/n/12 ©\T1/Alegreya-OsF/regular/it/12 dt \U/zeus/m/n/12 « \U/zeur/m/n/12 ^^[\T1/Alegreya-OsF/regular/it/12 X\U/zeus/m/n/12 ¨\T1/Alegreya-OsF/regular/it/12 t\U/zeus/m/n/12 ©\T1/Alegreya-OsF/regular/it/12 dW\U/zeus/m/n/12 ¨\T1/Alegreya-OsF/regular/it/12 t\U/zeus/m/n/12 ©\T1/AlegreyaSans-OsF/regular/n/12 ,  \T1/Alegreya-OsF/regular/it/12 X\U/zeus/m/n/12 ¨\T1/Alegreya-OsF/regular/n/12 0\U/zeus/m/n/12 © ½ \T1/Alegreya-OsF/regular/n/12 3\T1/AlegreyaSans-OsF/regular/n/12 ,  \U/zeur/m/n/12 ^^V \U/zeus/m/n/12 ½ \T1/Alegreya-OsF/regular/n/12 2\T1/AlegreyaSans-OsF/regular/n/12 ,  \U/zeur/m/n/12 ^^[ \U/zeus/m/n/12 ½ \T1/Alegreya-OsF/regular/n/12 0\T1/AlegreyaSans-OsF/regular/n/12 .\T1/Alegreya-OsF/regular/n/12 10
+ []
+
+[13
+
 ]
-<imgs/5.png, id=126, 602.25pt x 401.5pt>
-File: imgs/5.png Graphic file (type png)
-<use imgs/5.png>
-Package pdftex.def Info: imgs/5.png  used on input line 153.
-(pdftex.def)             Requested size: 301.12425pt x 200.7495pt.
+<imgs/4implicit_euler.png, id=136, 6022.5pt x 4015.0pt>
+File: imgs/4implicit_euler.png Graphic file (type png)
+<use imgs/4implicit_euler.png>
+Package pdftex.def Info: imgs/4implicit_euler.png  used on input line 206.
+(pdftex.def)             Requested size: 240.85898pt x 160.57265pt.
+ [14
 
-pdfTeX warning (ext4): destination with the same identifier (name{fig:2e}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.153 \end{frame}
-                  [13
+ <./imgs/4implicit_euler.png>]
+<imgs/4explicit_euler.png, id=143, 6022.5pt x 4015.0pt>
+File: imgs/4explicit_euler.png Graphic file (type png)
+<use imgs/4explicit_euler.png>
+Package pdftex.def Info: imgs/4explicit_euler.png  used on input line 215.
+(pdftex.def)             Requested size: 240.85898pt x 160.57265pt.
+ [15
 
- <./imgs/5.png>] [14
+ <./imgs/4explicit_euler.png>]
+<imgs/4mean_square_stable.png, id=150, 6022.5pt x 4015.0pt>
+File: imgs/4mean_square_stable.png Graphic file (type png)
+<use imgs/4mean_square_stable.png>
+Package pdftex.def Info: imgs/4mean_square_stable.png  used on input line 227.
+(pdftex.def)             Requested size: 180.6672pt x 120.4448pt.
+ [16
+
+ <./imgs/4mean_square_stable.png>]
+LaTeX Font Info:    Font shape `T1/Alegreya-OsF/m/n' in size <10> not available
+(Font)              Font shape `T1/Alegreya-OsF/regular/n' tried instead on input line 249.
+LaTeX Font Info:    Font shape `T1/Alegreya-OsF/regular/n' will be
+(Font)              scaled to size 10.0pt on input line 249.
+ [17
+
+]
+<imgs/5mean_exit_time.png, id=162, 6022.5pt x 4015.0pt>
+File: imgs/5mean_exit_time.png Graphic file (type png)
+<use imgs/5mean_exit_time.png>
+Package pdftex.def Info: imgs/5mean_exit_time.png  used on input line 258.
+(pdftex.def)             Requested size: 301.14264pt x 200.76176pt.
+ [18
+
+ <./imgs/5mean_exit_time.png>]
+<imgs/5exit_times_histogram.png, id=170, 6022.5pt x 4015.0pt>
+File: imgs/5exit_times_histogram.png Graphic file (type png)
+<use imgs/5exit_times_histogram.png>
+Package pdftex.def Info: imgs/5exit_times_histogram.png  used on input line 267.
+(pdftex.def)             Requested size: 301.14264pt x 200.76176pt.
+ [19
+
+ <./imgs/5exit_times_histogram.png>] [20
 
 ]
 \tf@nav=\write6
@@ -1202,18 +1269,18 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: B277C96F43F9C60A8FA1521A6CDBF193;536.
  ) 
 Here is how much of TeX's memory you used:
- 37114 strings out of 474116
- 766919 string characters out of 5743683
- 1935187 words of memory out of 5000000
- 58585 multiletter control sequences out of 15000+600000
- 905252 words of font info for 189 fonts, out of 8000000 for 9000
+ 37227 strings out of 474116
+ 769575 string characters out of 5743683
+ 1937187 words of memory out of 5000000
+ 58651 multiletter control sequences out of 15000+600000
+ 921134 words of font info for 209 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 128i,11n,123p,1083b,661s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 128i,11n,123p,1084b,840s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/huerta/alegreya/Alegreya-Bold.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/huerta/alegreya/Alegreya-Italic.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/huerta/alegreya/Alegreya-Medium.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/huerta/alegreya/Alegreya-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/huerta/alegreya/AlegreyaSans-Black.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/huerta/alegreya/AlegreyaSans-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/euler/euex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/euler/eusm10.pfb>
-Output written on main.pdf (14 pages, 490762 bytes).
+Output written on main.pdf (20 pages, 2288601 bytes).
 PDF statistics:
- 204 PDF objects out of 1000 (max. 8388607)
- 148 compressed objects within 2 object streams
- 42 named destinations out of 1000 (max. 500000)
- 71811 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 252 PDF objects out of 1000 (max. 8388607)
+ 184 compressed objects within 2 object streams
+ 61 named destinations out of 1000 (max. 500000)
+ 75937 words of extra memory for PDF output out of 89155 (max. 10000000)
 

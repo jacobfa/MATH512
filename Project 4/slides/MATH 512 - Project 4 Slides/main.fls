@@ -1,8 +1,8 @@
-PWD /Users/jacobfa/Desktop/Work/MATH512/Project 4/slides/MATH512 - Project 4 Slides
+PWD /Users/jacobfa/Desktop/Work/MATH512/Project 4/slides/MATH 512 - Project 4 Slides
 INPUT /usr/local/texlive/2024/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/jacobfa/Desktop/Work/MATH512/Project 4/slides/MATH512 - Project 4 Slides/main.tex
+INPUT /Users/jacobfa/Desktop/Work/MATH512/Project 4/slides/MATH 512 - Project 4 Slides/main.tex
 OUTPUT main.log
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamer.cls
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/beamer/beamer.cls
@@ -604,11 +604,51 @@ INPUT ./imgs/2f.png
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/huerta/alegreya/Alegreya-Bold-osf-t1.tfm
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/vf/huerta/alegreya/Alegreya-Bold-osf-t1.vf
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/huerta/alegreya/Alegreya-Bold-osf-t1--base.tfm
-INPUT ./imgs/5.png
-INPUT ./imgs/5.png
-INPUT ./imgs/5.png
-INPUT ./imgs/5.png
-INPUT ./imgs/5.png
+INPUT ./project4Q3fig1.png
+INPUT ./project4Q3fig1.png
+INPUT ./project4Q3fig1.png
+INPUT ./project4Q3fig1.png
+INPUT ./project4Q3fig1.png
+INPUT ./project4Q3fig3.png
+INPUT ./project4Q3fig3.png
+INPUT ./project4Q3fig3.png
+INPUT ./project4Q3fig3.png
+INPUT ./project4Q3fig3.png
+INPUT ./project4Q3fig3.png
+INPUT ./project4Q3fig3.png
+INPUT ./project4Q3fig3.png
+INPUT ./project4Q3fig3.png
+INPUT ./imgs/4implicit_euler.png
+INPUT ./imgs/4implicit_euler.png
+INPUT ./imgs/4implicit_euler.png
+INPUT ./imgs/4implicit_euler.png
+INPUT ./imgs/4implicit_euler.png
+INPUT ./imgs/4explicit_euler.png
+INPUT ./imgs/4explicit_euler.png
+INPUT ./imgs/4explicit_euler.png
+INPUT ./imgs/4explicit_euler.png
+INPUT ./imgs/4explicit_euler.png
+INPUT ./imgs/4mean_square_stable.png
+INPUT ./imgs/4mean_square_stable.png
+INPUT ./imgs/4mean_square_stable.png
+INPUT ./imgs/4mean_square_stable.png
+INPUT ./imgs/4mean_square_stable.png
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/huerta/alegreya/Alegreya-Regular-osf-t1.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/vf/huerta/alegreya/Alegreya-Regular-osf-t1.vf
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/huerta/alegreya/Alegreya-Regular-osf-t1--base.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/vf/public/eulervm/zeuex10.vf
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/euler/euex10.tfm
+INPUT ./imgs/5mean_exit_time.png
+INPUT ./imgs/5mean_exit_time.png
+INPUT ./imgs/5mean_exit_time.png
+INPUT ./imgs/5mean_exit_time.png
+INPUT ./imgs/5mean_exit_time.png
+INPUT ./imgs/5exit_times_histogram.png
+INPUT ./imgs/5exit_times_histogram.png
+INPUT ./imgs/5exit_times_histogram.png
+INPUT ./imgs/5exit_times_histogram.png
+INPUT ./imgs/5exit_times_histogram.png
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/vf/huerta/alegreya/Alegreya-Regular-osf-t1.vf
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/huerta/alegreya/Alegreya-Regular-osf-t1--base.tfm
 OUTPUT main.nav

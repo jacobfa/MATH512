@@ -83,27 +83,58 @@ histogram2d(μ, σ, bins = (edges_y, edges_x), xlabel = L"\mu", ylabel = L"\sigm
 savefig("imgs/4mean_square_stable.png")
 
 # d) For what values of 𝜃 is the implicit method mean-square stable
-
-# Getting the values of θ that make the implicit method mean-square stable
-θ = -1:0.01:1
+theta = 0:0.1:1
 stable = []
-# setting μ and σ to 2 and 0.10 respectively
+# set μ and σ to 2 and 0.10 respectively
 μ = 2
 σ = 0.10
-for t in θ
-    y = implicit_euler(μ, σ, t, Δt, N)
-    if mean(y.^2) < 1
+for t in theta
+    z = implicit_euler(μ, σ, t, Δt, N)
+    if mean(z.^2) < 1
         push!(stable, t)
-        println("θ = $t is mean-square stable")
     end
 end
 
-# plotting the values of θ that make the implicit method mean-square stable
-histogram(stable, bins = 50, xlabel = L"\theta", ylabel = "Frequency", title = "Mean Square Stable", dpi = 1000, c = :blues)
-savefig("imgs/4mean_square_stable_theta.png")
+edges_x = 0:0.1:1
+histogram(stable, bins = edges_x, xlabel = L"\theta", ylabel = "Frequency", title = "Mean Square Stable", dpi = 1000, c = :blues)
+savefig("imgs/4mean_square_stability_theta.png")
 
-# e) For what values of 𝜇 𝑎𝑛𝑑 𝜎 is the SDE asymptotically stable.
-# The SDE is asymptotically stable if the following condition is satisfied:
-# It is called asymptotically stable if, for every ε > 0, there exists δ > 0 such that
-# lim t→∞ E[|X(t)|^2] = 0 whenever E[|X(0)|^2] ≤ δ.
+# For what values of 𝜇 𝑎𝑛𝑑 𝜎 is the SDE asymptotically stable.
 
+# set μ and σ to 2 and 0.10 respectively
+μ = 2
+σ = 0.10
+stable = []
+for μ in 0:0.1:75
+    for σ in 0:0.1:20
+        y = implicit_euler(μ, σ, θ, Δt, N)
+        if abs(mean(y)) < 1
+            push!(stable, (μ, σ))
+        end
+    end
+end
+
+μ = [x[1] for x in stable]
+σ = [x[2] for x in stable]
+
+edges_x = 0:0.1:20
+edges_y = 0:0.1:75
+histogram2d(μ, σ, bins = (edges_y, edges_x), xlabel = L"\mu", ylabel = L"\sigma", title = "Asymptotically Stable", dpi = 1000, c = :blues)
+savefig("imgs/4asymptotically_stable.png")
+
+# For what values of 𝜃 is the implicit method asymptotically stable
+theta = 0:0.1:1
+stable = []
+# set μ and σ to 2 and 0.10 respectively
+μ = 2
+σ = 0.10
+for t in theta
+    z = implicit_euler(μ, σ, t, Δt, N)
+    if abs(mean(z)) < 1
+        push!(stable, t)
+    end
+end
+
+edges_x = 0:0.1:1
+histogram(stable, bins = edges_x, xlabel = L"\theta", ylabel = "Frequency", title = "Asymptotically Stable", dpi = 1000, c = :blues)
+savefig("imgs/4asymptotically_stability_theta.png")
