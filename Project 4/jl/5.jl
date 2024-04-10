@@ -71,7 +71,7 @@ for i in x
     push!(v, aM)
 end
 
-plot(x, v, label = "Mean exit time", xlabel = L"x", ylabel = L"v(x)", title = "Mean exit time function", legend = :topleft, dpi = 1000)
+plot(x, v, label = "Mean exit time", xlabel = L"t", ylabel = L"\tau(x)", title = "Mean exit time function", legend = :topleft, dpi = 1000)
 savefig("imgs/5mean_exit_time.png")
 
 # plot the histogram of the exit times
