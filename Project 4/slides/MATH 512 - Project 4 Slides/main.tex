@@ -1,88 +1,129 @@
-\documentclass{article}
-\usepackage[utf8]{inputenc}
-\usepackage{amsmath, amssymb, amsthm}
+\documentclass[compress,12pt]{beamer}
+\usepackage{caption}
+\usepackage{subcaption}
+\usetheme{Arguelles}
+\usepackage{color}
+\usepackage{tcolorbox}
+\usepackage{xcolor}
+\usepackage{booktabs}
 \usepackage{algorithm,algpseudocode}
-\usepackage{float}
-\usepackage[shortlabels]{enumitem}
-\usepackage{graphicx} % Required for inserting images
-\title{MATH512 - Project 4}
+\usepackage{amsfonts, amsmath, amssymb}
+\newcommand{\myRed}[1]{\textcolor{red}{#1}}
+
+\title{MATH 512 - Project 4}
+\subtitle{}
+\event{}
+\date{}
 \author{Wasif Ahmed, Haoxiang Deng, Jacob Fein-Ashley, Kanav Malhotra, Longzhe Yang}
-\date{April 2024}
+
 
 \begin{document}
 
-\maketitle
+\frame[plain]{\titlepage}
 
-\section*{Question 1}
+\section{Question 1}
 
-Refer to figure~\ref{fig:abssum} and ~\ref{fig:sqrsum}. 
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=0.6]{imgs/AbsSum.jpeg}
-    \caption{$|\delta W_i|$}
-    \label{fig:abssum}
-\end{figure}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=0.6]{imgs/SqrSum.jpeg}
-    \caption{$\delta W_i^2$}
-    \label{fig:sqrsum}
-\end{figure}
-Notice that as the $L$ parameter increases, the $|\delta W_i|$ term is unbounded while $\delta W_i^2$ converges to $2$ in probability.
+\begin{frame}{Question 1 Overview}
+      \begin{itemize}
+            \item Let $W_t$ be a standard Wiener process, with drift parameter zero and variance parameter $\sigma^2 = 1$.
+            \item We divide the interval $[0,2]$ into $L$ subintervals $[t_i, t_{i+1}]$, where $t_i = i\delta t$ and $\delta t = 2/L$.
+            \item Let $W_i = W(t_i)$ and $\delta W_i = W_{i+1} - W_i$.
+            \item We verify numerically that:
+            \begin{itemize}
+                  \item $\sum_{i=0}^{L-1} |\delta W_i|$ is unbounded as $\delta t$ goes to zero.
+                  \item $\sum_{i=0}^{L-1} \delta W_i^2$ converges to 2 in probability as $\delta t$ goes to zero.
+            \end{itemize}
+      \end{itemize}
+      
+\end{frame}
 
-\section*{Question 2}
+\begin{frame}{Question 1 Response}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[scale=0.5]{imgs/convergence1.png}
+      \end{figure}
+\end{frame}
 
-\begin{enumerate}
-    \item 
-        \begin{figure}[H]
+
+\begin{frame}{Question 1 Response}
+
+      \begin{figure}[H]
+      \centering
+      \includegraphics[scale=0.32]{imgs/SqrSum.jpeg}
+      \caption{$\delta W_i^2$}
+      \label{fig:sqrsum}
+      \end{figure}
+
+\end{frame}
+\section{Question 2}
+\begin{frame}{Question 2a}
+
+      \begin{figure}[H]
             \centering
-            \includegraphics[scale=0.6]{imgs/2a.png}
+            \includegraphics[scale=0.5]{imgs/2a.png}
             \caption{2a}
             \label{fig:2a}
-        \end{figure}
+      \end{figure}
 
-    \item 
-        \begin{figure}[H]
+\end{frame}
+
+\begin{frame}{Question 2b}
+
+      \begin{figure}[H]
             \centering
-            \includegraphics[scale=0.6]{imgs/2b.png}
+            \includegraphics[scale=0.5]{imgs/2b.png}
             \caption{2b}
             \label{fig:2b}
-        \end{figure}
-    \item
-        \begin{figure}[H]
+      \end{figure}
+\end{frame}
+
+\begin{frame}{Question 2c}
+
+      \begin{figure}[H]
             \centering
-            \includegraphics[scale=0.6]{imgs/2c.png}
+            \includegraphics[scale=0.5]{imgs/2c.png}
             \caption{2c}
             \label{fig:2c}
-        \end{figure}
-    \item
-        \begin{figure}[H]
+      \end{figure}
+\end{frame}
+
+
+\begin{frame}{Question 2d}
+      \begin{figure}[H]
             \centering
-            \includegraphics[scale=0.6]{imgs/2d.png}
+            \includegraphics[scale=0.5]{imgs/2d.png}
             \caption{2d}
             \label{fig:2d}
-        \end{figure}
-    \item
-        \begin{figure}[H]
+      \end{figure}
+\end{frame}
+
+
+\begin{frame}{Question 2e}
+      \begin{figure}[H]
             \centering
-            \includegraphics[scale=0.6]{imgs/2e.png}
+            \includegraphics[scale=0.5]{imgs/2e.png}
             \caption{2e}
             \label{fig:2e}
-        \end{figure}
+      \end{figure}
 
-    \item 
-        \begin{figure}[H]
+\end{frame}
+
+\begin{frame}{Question 2f}
+      \begin{figure}[H]
             \centering
-            \includegraphics[scale=0.6]{imgs/2f.png}
+            \includegraphics[scale=0.5]{imgs/2f.png}
             \caption{2f}
             \label{fig:2f}
-        \end{figure}
-\end{enumerate}
+      \end{figure}
 
-\section*{Question 3}
- \textbf{Objective:} Analyze the weak and strong order of convergence of the EM method for solving the given SDE:
+\end{frame}
+
+\section{Question 3}
+\begin{frame}{Question 3: Weak and Strong Order of Convergence for EM Method}
+
+    \textbf{SDE}:
     \[
     dX(t) = \mu X(t) dt + \sigma X(t) dW(t), \quad X(0)=3, \quad \mu=2 , \quad \sigma=0.10
     \]
@@ -92,14 +133,22 @@ Notice that as the $L$ parameter increases, the $|\delta W_i|$ term is unbounded
          \[
     |E[X_1]-E[X(1)]|=C\Delta t 
     \]
+    \[
+    |X_0e^{\mu*1}-\frac{1}{numPaths}\sum_{j=1}^{numPaths}X_j(1)|=C\Delta t 
+    \]
         \item \textbf{Strong order of convergence equal to 0.5:} to show that
          \[
     E|X_1-X(1)|=C\Delta t^{0.5} 
     \]
+    \[
+    \frac{1}{numPaths}\sum_{j=1}^{numPaths}|X_0e^{\mu*1+0.5*\sigma^2*1}-X_j(1)|=C\Delta t^{0.5} 
+    \]
     \end{itemize}
-    where ${X_1}$ stands for the exact solution and X(1) stands for the estimated solution.
-    
-\textbf{Weak Order of Convergence} focuses on the \textbf{expected values} of the numerical solution compared to the exact solution
+    where ${X_1}$ is the exact solution and X(1) is the estimated solution.
+\end{frame}
+
+\begin{frame}{Weak Order of Convergence Results}
+    \textbf{Weak Order of Convergence} focuses on the \textbf{expected values} of the numerical solution compared to the exact solution
     \[
     |E[X_1]-E[X(1)]|=C\Delta t 
     \]
@@ -108,13 +157,15 @@ Notice that as the $L$ parameter increases, the $|\delta W_i|$ term is unbounded
         \item A plot of the error versus \(\Delta t\) for the  weak order of convergence of 1. 
         \begin{figure}[H]
             \centering
-            \includegraphics[scale=0.4]{imgs/fig1.png}
+            \includegraphics[scale=0.4]{fig1.png}
             \label{fig:3a}
        \end{figure}
         
     \end{itemize}
-    
-\textbf{Strong Order of Convergence to 0.5}  is concerned with the \textbf{pathwise accuracy}, evaluating how closely the numerical solution follows individual realizations of the exact solution.
+\end{frame}
+
+\begin{frame}{Strong Order of Convergence Results}
+    \textbf{Strong Order of Convergence to 0.5}  is concerned with the \textbf{pathwise accuracy}, evaluating how closely the numerical solution follows individual realizations of the exact solution.
     \[
     E|X_1-X(1)|=C\Delta t^{0.5} 
     \]
@@ -123,43 +174,106 @@ Notice that as the $L$ parameter increases, the $|\delta W_i|$ term is unbounded
             
              \begin{figure}[H]
             \centering
-            \includegraphics[scale=0.4]{imgs/fig2.png}
+            \includegraphics[scale=0.4]{fig2.png}
             \label{fig:3a}
              \end{figure}
                 
             
     \end{itemize}
+    
+\end{frame}
+
+%\begin{frame}{Conclusion}
+%     The coefficient of determination of the weak convergence is larger than the strong convergence
+%\end{frame}
+
+\section{Question 4}
+\begin{frame}{Question 4}
+      We consider the following SDE:
+      \[
+      dX(t) = \mu X(t) dt + \sigma X(t) dW(t), \quad X(0)=3, \quad \mu=2 , \quad \sigma=0.10
+      \]
+
+      \begin{itemize}
+            \item Simulate this stochastic process over the interval $[0,20]$ using an implicit method of the form:
+            \[
+            X_{n+1} = X_n + (1 - \theta) \Delta t f(X_n) + \theta \Delta t f(X_{n+1}) + \sqrt{\Delta t} \alpha_n g(X_n)
+            \]
+            \item We use $\theta = 0.5$ and $\alpha_n = \sigma X_n$.
+            \item We plot the results for $\Delta t = 0.01$ and $\Delta t = 0.001$.
+      \end{itemize}
+
+\end{frame}
+
+\begin{frame}{Question 4 Continued}
+      We plot the explicit and implicit methods for $\Delta t = 0.01$ and $\Delta t = 0.001$:
+      \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.04]{imgs/4implicit_euler.png}
+            \caption{Implicit Euler Method}
+            \label{fig:4a}
+      \end{figure}
+\end{frame}
+
+\begin{frame}{Question 4 Continued}
+      \begin{figure}[H]
+            \centering
+            \includegraphics[scale=0.04]{imgs/4explicit_euler.png}
+            \caption{Explicit Euler Method}
+            \label{fig:4b}
+      \end{figure}
+\end{frame}
+
+\begin{frame}{Question 4 Continued}
+      We determine the values of $\mu$ and $\sigma$ for which the SDE is mean-square stable:
+      \begin{figure}
+            \centering
+            \includegraphics[scale=0.03]{imgs/4mean_square_stable.png}
+            \caption{Mean-Square Stability}
+            \label{fig:4c}
+      \end{figure}
+
+ 
+\end{frame}
+
+\begin{frame}{Question 4 Continued}
+      % Consider the following SDE:
+      % 𝑑𝑋(𝑡) = 𝜇𝑋(𝑡)𝑑𝑡 + 𝜎𝑋(𝑡)𝑑𝑊(𝑡) , 𝑋(0) = 3, 𝜇 = 2 , 𝜎 = 0.10
+      % a) Simulate (over the interval [0,20]) this stochastic process using an implicit method of the form
+      % 𝑋𝑛+1 = 𝑋𝑛 + (1 − 𝜃)𝛥𝑡𝑓(𝑋𝑛) + 𝜃𝛥𝑡𝑓(𝑋𝑛+1) + √𝛥𝑡𝛼𝑛𝑔(𝑋𝑛)
+
+      We theoretically calculate the values of $\mu$ and $\sigma$ for which the SDE is mean-square stable:
+      \begin{align*}
+            dX(t) &= \mu X(t) dt + \sigma X(t) dW(t) \\
+            &= \mu X(t) dt + \sigma X(t) \sqrt{dt} Z(t)
+      \end{align*}
+      where $Z(t) \sim N(0,1)$.
+
+      We find that the values of $\mu$ and $\sigma$ for which the SDE is mean-square stable are calculated as:
+      \begin{align*}
+            \mathbb{E}[(dX(t))^2] &= \mathbb{E}[(\mu X(t) dt + \sigma X(t) \sqrt{dt} Z(t))^2] \\
+            &= \mu^2 X(t)^2 dt^2 + \sigma^2 X(t)^2 dt
+      \end{align*}
+      which implies that $\mu^2 dt^2 + \sigma^2 dt \leq 0$.
+\end{frame}
 
 
-\section*{Question 4}
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=0.05]{imgs/4implicit_euler.png}
-    \caption{Implicit Euler}
-    \label{fig:impliciteuler}
-\end{figure}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=0.05]{imgs/4explicit_euler.png}
-    \caption{Explicit Euler}
-    \label{fig:expliciteuler}
-\end{figure}
+\begin{frame}{Question 4 Continued}
+      We also find that the asymptotic stability of the SDE is determined by the drift term $\mu$ and the diffusion term $\sigma$.
+      % # stable if limn→∞ |Yn| = 0, with probability one, for any X0.
+      % # The asymptotic stability of the SDE is determined by the drift term μ and the diffusion term σ.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[scale=0.05]{imgs/4mean_square_stable.png}
-    \caption{Mean Square Stable Values}
-    \label{fig:meansq}
-\end{figure}
+      We find that the SDE is mean-square stable in the range calculated:
+      \begin{align*}
+            \lim_{n \to \infty} |Y_n| &= 0, \text{ with probability one, for any } X_0 \\
+      \end{align*}
+      and the region is similar to the region of mean-square stability.
+\end{frame}
 
-
-
-\section*{Question 5}
-
+\section{Question 5}
+\begin{frame}{Question 5}
 An algorithm to simulate exit times for the SDE:
-
-
 \begin{algorithmic}[1]
     \State Choose a step size $\Delta t$
     \State Choose some paths, $M$
@@ -176,19 +290,31 @@ An algorithm to simulate exit times for the SDE:
     \State Set $b^2_M = \frac{1}{M-1} \sum_{s=1}^{M} (T_s^{exit} - a_M)^2$
 \end{algorithmic}
 
-\begin{figure}[H]
+\end{frame}
+
+\begin{frame}{Question 5 Continued}
+      \begin{figure}[H]
             \centering
             \includegraphics[scale=0.05]{imgs/5mean_exit_time.png}
             \caption{5}
             \label{fig:5}
       \end{figure}
+\end{frame}
 
+\begin{frame}{Question 5 Continued}
       \begin{figure}[H]
             \centering
             \includegraphics[scale=0.05]{imgs/5exit_times_histogram.png}
             \caption{5}
             \label{fig:5_exittimeshist}
       \end{figure}
+\end{frame}
 
+\End
+\begin{frame}[plain,standout]
+      \centering
+      Questions?
+\end{frame}
 
 \end{document}
+

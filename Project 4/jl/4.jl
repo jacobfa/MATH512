@@ -102,25 +102,38 @@ savefig("imgs/4mean_square_stability_theta.png")
 # For what values of 𝜇 𝑎𝑛𝑑 𝜎 is the SDE asymptotically stable.
 
 # set μ and σ to 2 and 0.10 respectively
-μ = 2
-σ = 0.10
+# stable if limn→∞ |Yn| = 0, with probability one, for any X0.
+
+# Getting the values of μ and σ that make the SDE asymptotically stable
+μ = 0:0.1:75
+σ = 0:0.1:20
 stable = []
-for μ in 0:0.1:75
-    for σ in 0:0.1:20
+probabilities = []
+for μ in μ
+    for σ in σ
         y = implicit_euler(μ, σ, θ, Δt, N)
-        if abs(mean(y)) < 1
+        prob = 0
+        for i in 1:N
+            if abs(y[i]) < 1
+                prob += 1
+            end
+        end
+        if prob == N
             push!(stable, (μ, σ))
         end
     end
 end
 
+# plotting the values of μ and σ that make the SDE asymptotically stable
 μ = [x[1] for x in stable]
 σ = [x[2] for x in stable]
 
 edges_x = 0:0.1:20
 edges_y = 0:0.1:75
+
 histogram2d(μ, σ, bins = (edges_y, edges_x), xlabel = L"\mu", ylabel = L"\sigma", title = "Asymptotically Stable", dpi = 1000, c = :blues)
 savefig("imgs/4asymptotically_stable.png")
+
 
 # For what values of 𝜃 is the implicit method asymptotically stable
 theta = 0:0.1:1
